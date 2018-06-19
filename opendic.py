@@ -7,7 +7,10 @@ import time
 import csv
 
 # set current path to basename
-basename = os.getcwd()
+#basename = os.getcwd()
+# This, unfortunately, didn't work when run by launchctl
+# so manually setting path
+basename = '/Users/Canor/scripts/opendic'
 
 def getdata(url, t):
     # setting chrome driver
